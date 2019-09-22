@@ -1,0 +1,2 @@
+(None, None) DateTime: 2019:09:17 13:46:29 FileName: testind\IMG_2224.jpg
+(None, None) DateTime: None FileName: testind\x3x80-y5f86-001.jpg
