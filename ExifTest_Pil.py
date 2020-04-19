@@ -6,6 +6,7 @@ from PIL.ExifTags import TAGS, GPSTAGS
 #import whatimage
 #import pyheif
 
+from sarahphotos.functions import count_my_photos
 
 # def decodeImage(bytesIo):
 #     fmt = whatimage.identify_image(bytesIo)
@@ -105,9 +106,8 @@ def get_datetime(exif_data: object) -> object:
 ################
 if __name__ == "__main__":
     myfile = open('indo_test.txt', 'w')
-    #for infile in glob.glob("Indo19/*.heif"):
-    #    newimg = decodeImage(infile)
-    for infile in glob.glob("Photos3/*.jpg"):
+    for infile in glob.glob("Photos3/*"):
+
         im = Image.open(infile)
         exif_data = get_exif_data(im)
         results = get_lat_lon(exif_data)
