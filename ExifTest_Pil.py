@@ -105,8 +105,8 @@ def get_datetime(exif_data: object) -> object:
 # Example ######
 ################
 if __name__ == "__main__":
-    myfile = open('indo_test.txt', 'w')
-    for infile in glob.glob("Photos3/*"):
+    myfile = open('update24.txt', 'w')
+    for infile in glob.glob("update24/*"):
 
         im = Image.open(infile)
         exif_data = get_exif_data(im)
